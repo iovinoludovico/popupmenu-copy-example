@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Popupmenu
+Bundle-SymbolicName: it.gssi.e4.ui.popupmenu;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: it.gssi.e4.ui.popupmenu.Activator
+Bundle-Vendor: GSSI
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.core.resources
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ActivationPolicy: lazy

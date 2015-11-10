@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            id="it.gssi.e4.ui.popupmenu.contribution1"
+            nameFilter="*.txt"
+            >
+            
+         <menu
+               label="File Manager"
+               path="additions"
+               id="it.gssi.e4.ui.popupmenu.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Copy"
+               class="it.gssi.e4.ui.popupmenu.popup.actions.CopyFile"
+               menubarPath="it.gssi.e4.ui.popupmenu.menu1/group1"
+               enablesFor="*"
+               id="it.gssi.e4.ui.popupmenu.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+<extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            objectClass="org.eclipse.core.resources.IFile"
+            id="it.gssi.e4.ui.popupmenu.contribution1"
+            nameFilter="*.java"
+            >
+            
+         <menu
+               label="File Manager"
+               path="additions"
+               id="it.gssi.e4.ui.popupmenu.menu1">
+            <separator
+                  name="group1">
+            </separator>
+         </menu>
+         <action
+               label="Copy"
+               class="it.gssi.e4.ui.popupmenu.popup.actions.CopyFile"
+               menubarPath="it.gssi.e4.ui.popupmenu.menu1/group1"
+               enablesFor="*"
+               id="it.gssi.e4.ui.popupmenu.newAction">
+         </action>
+      </objectContribution>
+   </extension>
+
+</plugin>
